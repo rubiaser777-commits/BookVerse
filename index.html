@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f0e8">
+    <meta name="description" content="Azərbaycan və Türkiyə ədəbiyyatının seçilmiş əsərlərini BookVerse-də kəşf et.">
+    <title>BookVerse — Stories have no borders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Əsas məzmuna keç</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#home" aria-label="BookVerse — ana səhifə">BookVerse<span>.</span></a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Naviqasiyanı aç">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primaryNav" aria-label="Əsas naviqasiya">
+          <a href="#home">Ana səhifə</a>
+          <a href="#explore">Kəşf et</a>
+          <a href="#categories">Kateqoriyalar</a>
+          <a href="#about">Haqqımızda</a>
+        </nav>
+        <div class="header-actions">
+          <button class="search-trigger" id="searchTrigger" type="button" aria-label="Axtarışa keç">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
+          </button>
+          <button class="favorites-link" id="favoritesToggle" type="button" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 5.2-8.8 10.1-8.8 10.1S3.2 14 3.2 8.8a4.5 4.5 0 0 1 8.8-1.3 4.5 4.5 0 0 1 8.8 1.3Z"></path></svg>
+            <span>Sevimlilər</span><span class="favorite-count" id="favoriteCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> ƏDƏBİYYƏTİN ORTAQ DİLİ</p>
+          <h1 id="heroTitle">Stories have<br><em>no borders.</em></h1>
+          <p class="hero-description">Azərbaycan və Türkiyə ədəbiyyatının ən gözəl əsərlərini bir arada kəşf et.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#explore">Kitabları kəşf et <span aria-hidden="true">↗</span></a>
+            <button class="button button-text" type="button" data-open-favorites>Sevimlilərim <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="hero-note"><span class="note-mark">✳</span><span>İki ədəbiyyat.<br>Minlərlə yeni dünya.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Seçilmiş kitabların illüstrativ kompozisiyası">
+          <div class="art-caption caption-top">OXU · KƏŞF ET · PAYLAŞ</div>
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="hero-sun"></div>
+          <div class="hero-book hero-book-back">
+            <span class="hero-book-label">SƏHİFƏLƏR ARASINDA</span>
+            <span class="hero-book-title">yeni<br>dünyalar</span>
+            <span class="hero-book-author">BOOKVERSE SEÇİMİ</span>
+          </div>
+          <div class="hero-book hero-book-front">
+            <span class="hero-book-number">01 / 06</span>
+            <span class="hero-book-title">Ədəbiyyat<br><i>sərhədsizdir</i></span>
+            <span class="hero-book-rule"></span>
+            <span class="hero-book-author">AZƏRBAYCAN × TÜRKİYƏ</span>
+          </div>
+          <div class="art-stamp">B<br>V</div>
+          <div class="art-caption caption-bottom">BİR SƏHİFƏDƏN BAŞLA</div>
+          <span class="art-spark spark-one">✳</span>
+          <span class="art-spark spark-two">✳</span>
+        </div>
+        <div class="hero-footer"><span>01 — 06</span><span class="hero-footer-line"></span><span>ƏDƏBİ KƏŞFƏ BAŞLA</span></div>
+      </section>
+
+      <section class="collection-strip" aria-label="BookVerse kolleksiyası">
+        <div><span class="strip-number">12+</span><span>seçilmiş əsər</span></div>
+        <span class="strip-divider" aria-hidden="true"></span>
+        <div><span class="strip-number">02</span><span>qardaş ədəbiyyat</span></div>
+        <span class="strip-divider" aria-hidden="true"></span>
+        <p>Hər kitab yeni bir <em>başlanğıcdır.</em></p>
+        <span class="strip-star" aria-hidden="true">✳</span>
+      </section>
+
+      <section class="featured-section section-wrap" aria-labelledby="featuredTitle">
+        <div class="section-topline"><span>REDAKSİYA SEÇİMİ</span><span>01 — SEÇİLMİŞLƏR</span></div>
+        <div class="section-heading featured-heading">
+          <div><p class="eyebrow">BU AYIN OXULARI</p><h2 id="featuredTitle">İlk baxışda <em>sevilənlər.</em></h2></div>
+          <p class="section-intro">Kolleksiyamızdan seçilən, yadda qalan və yenidən oxumaq istəyəcəyin hekayələr.</p>
+        </div>
+        <div class="featured-grid" id="featuredGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="categories-section" id="categories" aria-labelledby="categoriesTitle">
+        <div class="categories-inner">
+          <div class="category-intro">
+            <p class="eyebrow">OXU ƏHVALINA GÖRƏ</p>
+            <h2 id="categoriesTitle">Bu gün hansı<br><em>dünyaya</em> gedək?</h2>
+            <p>Bir janr seç, növbəti sevimli kitabınla tanış ol.</p>
+          </div>
+          <div class="category-list" id="categoryList">
+            <button class="category-button" type="button" data-category="roman"><span>01</span> Roman <span class="category-arrow">↗</span></button>
+            <button class="category-button" type="button" data-category="klassika"><span>02</span> Klassika <span class="category-arrow">↗</span></button>
+            <button class="category-button" type="button" data-category="dram"><span>03</span> Dram <span class="category-arrow">↗</span></button>
+            <button class="category-button" type="button" data-category="sevgi"><span>04</span> Sevgi <span class="category-arrow">↗</span></button>
+            <button class="category-button" type="button" data-category="psixologiya"><span>05</span> Psixologiya <span class="category-arrow">↗</span></button>
+            <button class="category-button" type="button" data-category="detektiv"><span>06</span> Detektiv <span class="category-arrow">↗</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section section-wrap" id="explore" aria-labelledby="catalogTitle">
+        <div class="section-topline"><span>KİTABXANA</span><span>02 — KATALOQ</span></div>
+        <div class="section-heading catalog-heading">
+          <div><p class="eyebrow">SƏNİN NÖVBƏTİ HEKAYƏN</p><h2 id="catalogTitle">Kitab <em>dünyası.</em></h2></div>
+          <p class="section-intro">Axtar, janr seç, özünə yaxın hekayəni tap.</p>
+        </div>
+        <div class="catalog-tools">
+          <label class="search-field" for="searchInput">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
+            <input id="searchInput" type="search" placeholder="Kitab, müəllif və ya janr axtar..." autocomplete="off">
+            <kbd>/</kbd>
+          </label>
+          <label class="select-wrap" for="languageFilter">
+            <span class="sr-only">Dil üzrə süzgəc</span>
+            <select id="languageFilter">
+              <option value="all">Bütün dillər</option>
+              <option value="az">Azərbaycan</option>
+              <option value="tr">Türk</option>
+            </select>
+          </label>
+          <label class="select-wrap" for="genreFilter">
+            <span class="sr-only">Janr üzrə süzgəc</span>
+            <select id="genreFilter">
+              <option value="all">Bütün janrlar</option>
+              <option value="roman">Roman</option>
+              <option value="klassika">Klassika</option>
+              <option value="dram">Dram</option>
+              <option value="sevgi">Sevgi</option>
+              <option value="psixologiya">Psixologiya</option>
+              <option value="detektiv">Detektiv</option>
+            </select>
+          </label>
+        </div>
+        <div class="catalog-meta"><p id="resultsLabel" aria-live="polite"></p><button id="clearFilters" class="clear-filters" type="button">Süzgəcləri təmizlə <span>×</span></button></div>
+        <div class="book-grid" id="bookGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="aboutTitle">
+        <div class="about-deco" aria-hidden="true">“</div>
+        <div class="about-content">
+          <p class="eyebrow">BOOKVERSE HAQQINDA</p>
+          <h2 id="aboutTitle">Sərhədlər xəritədədir.<br><em>Hekayələrdə yox.</em></h2>
+          <p>BookVerse — Azərbaycan və Türkiyə ədəbiyyatının zənginliyini bir araya gətirən rəqəmsal kitab məkanıdır. Klassik əsərlərdən müasir hekayələrə qədər, hər oxucu üçün yeni bir səs, yeni bir baxış və özünə yaxın bir dünya var.</p>
+          <a class="about-link" href="#explore">Kolleksiyanı kəşf et <span>↗</span></a>
+        </div>
+        <div class="about-aside"><span>İKİ MƏDƏNİYYƏT</span><span class="about-aside-mark">×</span><span>SAYSIZ HEKAYƏ</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand"><a class="wordmark" href="#home">BookVerse<span>.</span></a><p>Oxumaqla açılan dünyalar.<br>Azərbaycan və Türkiyə ədəbiyyatı bir arada.</p></div>
+        <div class="footer-nav"><span>KEÇİD</span><a href="#home">Ana səhifə</a><a href="#explore">Kataloq</a><a href="#categories">Kateqoriyalar</a><a href="#about">Haqqımızda</a></div>
+        <a class="back-top" href="#home" aria-label="Səhifənin əvvəlinə qayıt">↑</a>
+      </div>
+      <div class="footer-bottom"><span>© 2026 BOOKVERSE. BÜTÜN HÜQUQLAR QORUNUR.</span><span>HƏR HEKAYƏ BİR SƏHİFƏDƏN BAŞLAYIR.</span></div>
+    </footer>
+
+    <dialog class="book-dialog" id="bookDialog" aria-labelledby="dialogTitle">
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="Pəncərəni bağla">×</button>
+      <div class="dialog-content" id="dialogContent"></div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
